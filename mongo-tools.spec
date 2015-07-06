@@ -36,14 +36,6 @@ install -d -m 755            %{buildroot}%{_bindir}
 install -p -m 755 bin/*      %{buildroot}%{_bindir}/
 
 %files
-%license LICENSE.md APACHE-2.0.txt
-%doc README.md CONTRIBUTING.md
+%doc LICENSE.md APACHE-2.0.txt README.md CONTRIBUTING.md
 %{_bindir}/*
 
-%changelog
-* Mon May 11 2015 Marek Skalicky <mskalick@redhat.com> - 3.0.3-1
-- Upgrade to version 3.0.3
-- Add Apache license
-
-* Mon May 4 2015 Marek Skalicky <mskalick@redhat.com> - 3.0.2-1
-- Initial packaging
